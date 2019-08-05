@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    font-size: 20px;
+    text-align: center;
+    border: solid 3px white;
+    border-radius: 5px;
+    width: 700px;
+    background-color: rgba(0,0,0,0.1);
+    margin: 75px auto;
+}
+img {
+    margin: auto;
+    display: block;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
