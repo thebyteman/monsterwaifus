@@ -53,6 +53,7 @@ body{
     background-color: black;
     color: white;
 }
+/* Header */
 header{
     color: black;
     background-color: white;
@@ -88,11 +89,22 @@ header ul li a {
 header ul li a:hover {
     color: purple;
 }
-#webcomic img {
-    margin: 50px auto;
+
+/* Comic */
+.nav {
+    margin: 50px;
+    text-align: center;
+}
+.nav a{
+    margin: 0 30px;
+    display: inline-block;
+}
+#webcomic #comic {
+    margin: auto;
     display: block;
 }
 
+/* Footer */
 footer{
     background-color: purple;
     height: 100px;
