@@ -1,0 +1,34 @@
+[
+    {
+        "name": "home",
+        "link": "/"
+    },
+    {
+        "name": "waifus",
+        "link": "/waifus.html"
+    },
+    {
+        "name": "fanart",
+        "link": "/fanart.html"
+    },
+    {
+        "name": "about",
+        "link": "/about.html"
+    },
+    {
+        "name": "games",
+        "link": "/games.html"
+    },
+    {
+        "name": "wiki",
+        "link": "/wiki.html"
+    },
+    {
+        "name": "merch",
+        "link": "/merch.html"
+    },
+    {
+        "name": "archive",
+        "link": "/archive.html"
+    }
+]

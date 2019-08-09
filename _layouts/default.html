@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="author" content="thebyteman">
+  <meta name="description" content="Monster Waifus Homepage">
+  <meta name="keywords" content="Monster, Waifus, Monster Waifus, Kawai, Anime, Sexy, webcomic, video games, game">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/vnd.microsoft.icon ">
+  <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+</head>
+
+<body>
+
+  <header>
+
+    <img src="/assets/images/lewd.png"/>
+
+    <h1>{{ page.title }}</h1>
+    
+    {% include header-nav.html %}
+
+  </header>
+
+  <section id="content">
+    
+    {{ content }}
+    
+  </section>
+
+  <footer>
+    <h1>Games coming soon!</h1>
+  </footer>
+
+  <script type="text/javascript" src="/assets/js/index.js"></script>
+
+</body>
+
+</html>
