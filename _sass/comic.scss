@@ -1,0 +1,15 @@
+/* Comic */
+#webcomic{ 
+    nav {
+        margin: 50px;
+        text-align: center;
+        a{
+            margin: 0 30px;
+            display: inline-block;
+        }
+    }
+    #comic {
+        margin: auto;
+        display: block;
+    }
+}

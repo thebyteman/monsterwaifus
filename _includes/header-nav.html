@@ -1,0 +1,7 @@
+<nav>
+    {% for item in site.data.header-nav %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;" {% endif %}>
+        {{ item.name | capitalize }}
+    </a>
+    {% endfor %}
+</nav>

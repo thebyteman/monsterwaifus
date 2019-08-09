@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+{% include comic-nav.html %}
+{{ content }}
+{% include comic-nav.html %}

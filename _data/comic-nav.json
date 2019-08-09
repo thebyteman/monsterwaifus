@@ -1,0 +1,27 @@
+[
+    {
+        "class": "first",
+        "image": "/assets/images/first.png",
+        "link": "google.com"
+    },
+    {
+        "class": "prev",
+        "image": "/assets/images/back.png",
+        "link": "google.com"
+    },
+    {
+        "class": "rand",
+        "image": "/assets/images/random.png",
+        "link": "google.com"
+    },
+    {
+        "class": "next",
+        "image": "/assets/images/next.png",
+        "link": "google.com"
+    },
+    {
+        "class": "last",
+        "image": "/assets/images/last.png",
+        "link": "google.com"
+    }
+]

@@ -1,0 +1,7 @@
+<nav>
+    {% for item in site.data.comic-nav %}
+    <a class="{{ item.class }}" href="{{ item.link }}" >
+        <img src="{{ item.image }}" />
+    </a>
+    {% endfor %}
+</nav>

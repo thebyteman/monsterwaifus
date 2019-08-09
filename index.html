@@ -1,57 +1,15 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Monster Waifus</title>
-  <meta name="author" content="thebyteman">
-  <meta name="description" content="Monster Waifus Homepage">
-  <meta name="keywords" content="Monster, Waifus, Monster Waifus, Kawai, Anime, Sexy, webcomic, video games, game">
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/vnd.microsoft.icon ">
-  <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-
-<body>
-
-  <header>
-
-    <img src="assets/lewd.png"/>
-
-    <h1>Monster Waifus</h1>
-    
+---
+# front matter tells Jekyll to process Liquid
+layout: default
+title: Monster Waifus
+---
+<section id="webcomic">
     <ul>
-        <li><a href="twitch.tv/thebyteman">Waifus</a></li>
-        <li><a href="patreon.com">Archives</a></li>
-        <li><a href="thebyteman.com">Store</a></li>
-    </ul>
-
-  </header>
-
-  <section id="webcomic">
-    <section class="nav">
-      <a class="first"><img src="assets/first.png"/></a>
-      <a class="prev"><img src="assets/back.png"/></a>
-      <a class="rand"><img src="assets/random.png"/></a>
-      <a class="next"><img src="assets/next.png"/></a>
-      <a class="last"><img src="assets/last.png"/></a>
-    </section>
-    <img id="comic" src="assets/comic-placeholder.png"/>
-
-    <section class="nav">
-      <a class="first"><img src="assets/first.png"/></a>
-      <a class="prev"><img src="assets/back.png"/></a>
-      <a class="rand"><img src="assets/random.png"/></a>
-      <a class="next"><img src="assets/next.png"/></a>
-      <a class="last"><img src="assets/last.png"/></a>
-    </section>
-  </section>
-
-  <footer>
-    <h1>Games coming soon!</h1>
-  </footer>
-
-  <script type="text/javascript" src="index.js"></script>
-
-</body>
-
-</html>
+        {% for post in site.posts %}
+          <li>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>{{ post.excerpt }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+</section>
