@@ -1,0 +1,22 @@
+#merch {
+    text-align: center;
+
+    #merch-title-container {
+        img, h1 {
+            display: inline-block;
+        }
+        h1 {
+            line-height: 100px;
+            font-size: 32px;
+            vertical-align: top;
+        }
+    }
+
+    .product {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        display: inline-block;
+        background-color: white;
+    }
+}

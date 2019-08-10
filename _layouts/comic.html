@@ -1,9 +1,18 @@
 ---
 layout: default
 ---
-{% if page.title != "Monster Waifus" %}
-<h1>{{ page.dik }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-{% endif %}
+<section id="webcomic">
+    {% if page.title != "Monster Waifus" %}
+    <h1 id="comic-title">{{ page.dik }}</h1>
+    {% else %}
+    <h1 id="comic-title">{{ site.posts[0].dik }}</h1>
+    {% endif %}
+    {% include comic-nav.html %}
+    {{ content }}
+    {% include comic-nav.html %}
+    {% include share.html %}
 
-{{ content }}
+    <div id="merch">
+        {% include merch.html %}
+    </div>
+</section>

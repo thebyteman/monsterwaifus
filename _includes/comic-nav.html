@@ -1,7 +1,33 @@
 <nav>
-    {% for item in site.data.comic-nav %}
-    <a class="{{ item.class }}" href="{{ item.link }}" >
-        <img src="{{ item.image }}" />
+    <a class="first" href="{{site.posts[0].url}}">
+        <img src="/assets/images/first.png" />
     </a>
-    {% endfor %}
+    {% if page.title == "Monster Waifus" %}
+    <a class="prev" href="">
+        <img src="/assets/images/back.png" />
+    </a>
+    {% else %}
+    <a class="prev" href="{{page.next.url}}">
+        <img src="/assets/images/back.png" title="{{ page.previous.title }}" alt="{{ page.previous.title }}" />
+    </a>
+    {% endif %}
+    <a class="rand" href="">
+        <img src="/assets/images/random.png" />
+    </a>
+    {% if page.title == "Monster Waifus" %}
+    <a class="next" href="{{site.posts[1].url}}">
+        <img src="/assets/images/next.png" />
+    </a>
+    {% else %}
+    <a class="next" href="{{page.previous.url}}">
+        <img src="/assets/images/next.png" title="{{ page.next.title }}" alt="{{ page.next.title }}" />
+    </a>
+    {% endif %}
+    <a class="last" href="{{site.posts[-1].url}}">
+        <img src="/assets/images/last.png" />
+    </a>
+
 </nav>
+
+
+

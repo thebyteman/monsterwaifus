@@ -1,9 +1,15 @@
 /* Comic */
 #webcomic{ 
+    #comic-title {
+        margin-top: 25px;
+        font-size: 48px;
+        text-align: center;
+    }
     nav {
         margin: 50px;
         text-align: center;
         a{
+            text-decoration: none;
             margin: 0 30px;
             display: inline-block;
         }
