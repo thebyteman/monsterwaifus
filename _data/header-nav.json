@@ -1,9 +1,5 @@
 [
     {
-        "name": "home",
-        "link": "/"
-    },
-    {
         "name": "waifus",
         "link": "/waifus.html"
     },
@@ -12,23 +8,15 @@
         "link": "/fanart.html"
     },
     {
-        "name": "about",
-        "link": "/about.html"
-    },
-    {
         "name": "games",
         "link": "/games.html"
     },
     {
         "name": "wiki",
-        "link": "/wiki.html"
+        "link": "https://monsterwaifus.fandom.com/wiki/Monster_Waifus_Wiki"
     },
     {
         "name": "merch",
         "link": "/merch.html"
-    },
-    {
-        "name": "archive",
-        "link": "/archive.html"
     }
 ]
