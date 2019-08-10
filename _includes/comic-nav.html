@@ -1,31 +1,41 @@
 <nav>
-    <a class="first" href="{{site.posts[0].url}}">
-        <img src="/assets/images/first.png" />
-    </a>
-    {% if page.title == "Monster Waifus" %}
-    <a class="prev" href="">
-        <img src="/assets/images/back.png" />
-    </a>
+    {% if page.title == "Monster Waifus"  or page.url == site.posts[0].url %}
+    <img class="button first" src="/assets/images/first-disable.png" title="Thou shalt not pass" alt="Thou shalt not pass"/>
+    <img class="button prev" src="/assets/images/back-disable.png" title="This is not the button you are looking for *Waves hand*" alt="This is not the button you are looking for *Waves hand*"/>
+
     {% else %}
-    <a class="prev" href="{{page.next.url}}">
+    <a class="button first" href="{{site.posts[0].url}}">
+        <img src="/assets/images/first.png" title="{{ site.posts[0].url }}" alt="{{ site.posts[0].url }}"/>
+    </a>
+
+    <a class="button prev" href="{{page.next.url}}">
         <img src="/assets/images/back.png" title="{{ page.previous.title }}" alt="{{ page.previous.title }}" />
     </a>
     {% endif %}
-    <a class="rand" href="">
-        <img src="/assets/images/random.png" />
+    
+    <a class="button archive" href="/archives">
+        <img src="/assets/images/random.png" title="Archive" alt="Archive"/>
     </a>
+
+
+    {% if page.url == site.posts[-1].url %}
+    <img class="button next" src="/assets/images/next-disable.png" title="You have reached the beginning of time" alt="You have reached the beginning of time"/>
+    <img class="button last" src="/assets/images/last-disable.png" title="No humans beyond this point" alt="No humans beyond this point"/>
+
+    {% else %}
     {% if page.title == "Monster Waifus" %}
-    <a class="next" href="{{site.posts[1].url}}">
-        <img src="/assets/images/next.png" />
+    <a class="button next" href="{{site.posts[1].url}}">
+        <img src="/assets/images/next.png" title="{{ site.posts[1].url }}" alt="{{ site.posts[1].url }}"/>
     </a>
     {% else %}
-    <a class="next" href="{{page.previous.url}}">
+    <a class="button next" href="{{page.previous.url}}">
         <img src="/assets/images/next.png" title="{{ page.next.title }}" alt="{{ page.next.title }}" />
     </a>
     {% endif %}
-    <a class="last" href="{{site.posts[-1].url}}">
-        <img src="/assets/images/last.png" />
+    <a class="button last" href="{{site.posts[-1].url}}">
+        <img src="/assets/images/last.png" title="{{ site.posts[-1].url }}" alt="{{ site.posts[-1].url }}"/>
     </a>
+    {% endif %}
 
 </nav>
 
