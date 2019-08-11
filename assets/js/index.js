@@ -16,3 +16,12 @@ patreonImg.onmouseover = () => {
 patreonImg.onmouseout = () => {
     patreonImg.setAttribute("src", "/assets/images/patreon-hide.png")
 };
+
+const Http = new XMLHttpRequest();
+const url='https://www.etsy.com/shop/thebyteman';
+Http.open("GET", url);
+Http.send();
+
+Http.onreadystatechange = (e) => {
+  console.log(Http.responseText)
+}
