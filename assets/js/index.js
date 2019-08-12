@@ -21,7 +21,7 @@ patreonImg.onmouseout = () => {
 
 /* code to populate merch from etsy */
 const Http = new XMLHttpRequest();
-const url = 'http://thebyteman.com/api/monsterwaifusmerch';
+const url = 'https://thebyteman.com/api/monsterwaifusmerch';
 Http.open("GET", url);
 Http.send();
 
