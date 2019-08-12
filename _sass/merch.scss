@@ -10,6 +10,30 @@
             font-size: 32px;
             vertical-align: top;
         }
+        #merch-card-container {
+            max-width: 750px;
+            margin: auto;
+        }
+        .merch-card {
+            display: inline-block;
+            width: 250px;
+            height: 300px;
+            vertical-align: top;
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                img {
+                    width: 250px;
+                }
+                h2 {
+                    margin-top: 10px;
+                }
+            }  
+            a:hover>h2 {
+                color: green;
+            }
+        }
     }
 
 }
