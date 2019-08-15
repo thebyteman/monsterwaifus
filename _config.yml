@@ -32,8 +32,17 @@ collections_dir: my_collections
 collections:
   - waifus
 
-paginate: 1
-paginate_path: "/comic/:num/"
+defaults:
+  -
+    scope:
+      path: ""
+      type: "waifus" # a collection in your site, in plural form
+    values:
+      img: "/assets/images/coming-soon.png"
+      layout: "waifus"
+
+
+
 
 plugins:
   - jekyll-feed

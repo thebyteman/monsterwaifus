@@ -3,9 +3,9 @@ layout: default
 ---
 <section id="webcomic">
     {% if page.title != "Monster Waifus" %}
-    <h1 id="comic-title">{{ page.dik }}</h1>
+    <h1 id="comic-title" class="title">{{ page.dik }}</h1>
     {% else %}
-    <h1 id="comic-title">{{ site.posts[0].dik }}</h1>
+    <h1 id="comic-title" class="title">{{ site.posts[0].dik }}</h1>
     {% endif %}
     {% include comic-nav.html %}
     {{ content }}

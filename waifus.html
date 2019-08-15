@@ -2,9 +2,23 @@
 # front matter tells Jekyll to process Liquid
 layout: default
 title: Monster Waifus
+
 ---
-<h1>{{ page.title }}</h1>
+<h1 id="waifus-title" class="title">{{ page.title }}</h1>
 
 {% for waifu in site.waifus %}
-  <h2>{{ waifu.name }} - {{ waifu.type }}</h2>
+  <section id="waifu-card" class="center">
+
+    <h2>{{ waifu.name }} - {{ waifu.epethet }}</h2>
+    <img src="{{waifu.img}}"/>
+    
+    <section id="waifu-data">
+      <span>Type: </span><p>{{waifu.type}}</p></br>
+      <span>Species: </span><p>{{waifu.species}}</p></br>
+      <span>Personality: </span><p>{{waifu.personality}}</p></br>
+      <span>Weapon: </span><p>{{waifu.weapon}}</p></br>
+      <span>Laugh: </span><p>{{waifu.laugh}}</p></br>
+      <span>Data: </span><p>{{waifu.data}}</p>
+    </section>
+  </section>
 {% endfor %}
